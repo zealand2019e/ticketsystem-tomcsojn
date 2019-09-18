@@ -4,8 +4,11 @@ using System.Text;
 
 namespace TicketLibrary
 {
-  public   class Vehicle
+  public abstract class Vehicle
     {
+        /// <summary>
+        /// 
+        /// </summary>
         string licensplate;
         public string Licensplate {
             get {return licensplate; }
