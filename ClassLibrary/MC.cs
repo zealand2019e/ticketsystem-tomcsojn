@@ -6,7 +6,11 @@ namespace TicketLibrary
 {
     public class MC:Vehicle
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="price"></param>
+        /// <returns></returns>
         public override double Price(double price = 125)
         {
             return base.Price(price);
