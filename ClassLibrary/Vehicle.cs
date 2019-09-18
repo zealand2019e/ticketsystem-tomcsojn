@@ -6,7 +6,12 @@ namespace TicketLibrary
 {
   public   class Vehicle
     {
-        public string Licensplate;
+        string licensplate;
+        public string Licensplate {
+            get {return licensplate; }
+            set {
+                if (value.Length > 7) throw new ArgumentOutOfRangeException();
+                else licensplate = value; } }
         public DateTime Date;
         public virtual decimal Price(decimal price = 240)
         {

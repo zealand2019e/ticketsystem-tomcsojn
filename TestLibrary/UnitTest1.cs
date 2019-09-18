@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicketLibrary;
+using System;
 
 namespace TestLibrary
 {
@@ -35,6 +36,22 @@ namespace TestLibrary
             MC c = new MC();
             string result = c.VehicleType();
             Assert.AreEqual(result, "MC");
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void test_exception_mc()
+        {
+            MC c = new MC();
+            c.Licensplate = "ABC123ABC";
+            Assert.Fail();
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void test_exception_car()
+        {
+            Car c = new Car();
+            c.Licensplate = "ABC123ABC";
+            Assert.Fail();
         }
     }
 }
