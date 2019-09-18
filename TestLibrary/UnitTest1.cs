@@ -12,7 +12,7 @@ namespace TestLibrary
         {
            
             Car c = new Car();
-            decimal result = c.Price();
+            double result = c.Price();
             Assert.AreEqual(result, 240);
         }
         [TestMethod]
@@ -27,7 +27,7 @@ namespace TestLibrary
         {
 
             MC c = new MC();
-            decimal result = c.Price();
+            double result = c.Price();
             Assert.AreEqual(result, 125);
         }
         [TestMethod]
@@ -52,6 +52,24 @@ namespace TestLibrary
             Car c = new Car();
             c.Licensplate = "ABC123ABC";
             Assert.Fail();
+        }
+        [TestMethod]
+        public void test_discount_mc()
+        {
+            MC c = new MC();
+            c.brobizz = true;
+            double result = c.Price();
+            Assert.AreEqual(result,118.75);
+            
+        }
+        [TestMethod]
+        public void test_discount_car()
+        {
+            Car c = new Car();
+            c.brobizz = true;
+            double result = c.Price();
+            Assert.AreEqual(result, 228);
+
         }
     }
 }

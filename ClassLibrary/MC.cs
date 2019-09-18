@@ -7,10 +7,10 @@ namespace TicketLibrary
     public class MC:Vehicle
     {
 
-        public override decimal Price(decimal price = 125)
+        public override double Price(double price = 125)
         {
-
-            return price;
+            return base.Price(price);
+            
         }
         public override string VehicleType(string type = "MC")
         {

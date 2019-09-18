@@ -13,9 +13,13 @@ namespace TicketLibrary
                 if (value.Length > 7) throw new ArgumentOutOfRangeException();
                 else licensplate = value; } }
         public DateTime Date;
-        public virtual decimal Price(decimal price = 240)
+        public bool brobizz;
+        public virtual double Price(double price = 240)
         {
-
+            if (brobizz)
+            {
+                return price*0.95;
+            }
             return price;
         }
         public virtual string VehicleType(string type = "Car")
