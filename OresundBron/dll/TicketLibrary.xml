@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:TicketLibrary.Car.Price">
+            <summary>
+            Car Class with Price, and VehicleType
+            </summary>
+        </member>
+        <member name="M:TicketLibrary.MC.Price">
+            <summary>
+            
+            </summary>
+            <param name="price"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TicketLibrary.Vehicle.licensplate">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

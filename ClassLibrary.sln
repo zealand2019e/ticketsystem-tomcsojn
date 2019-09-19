@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketLibrary", "ClassLibra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{0C3D63FD-F161-4394-8612-79BF9FBCDB33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassLibrary", "ClassLibrary", "{742A4447-D83C-477D-B975-8BF4E2310B02}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "T9", "T9", "{742A4447-D83C-477D-B975-8BF4E2310B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{C034FC8D-C491-4DBC-89C1-88F35315931A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{C034FC8D-C491-4DBC-89C1-88F35315931A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "T10", "T10", "{D02ACAB5-9C41-456C-B552-0777757B7017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBron", "OresundBron\OresundBron.csproj", "{4E25C850-4F12-400A-9BC8-ED9FF062AA9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{C034FC8D-C491-4DBC-89C1-88F35315931A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C034FC8D-C491-4DBC-89C1-88F35315931A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C034FC8D-C491-4DBC-89C1-88F35315931A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E25C850-4F12-400A-9BC8-ED9FF062AA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E25C850-4F12-400A-9BC8-ED9FF062AA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E25C850-4F12-400A-9BC8-ED9FF062AA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E25C850-4F12-400A-9BC8-ED9FF062AA9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5} = {742A4447-D83C-477D-B975-8BF4E2310B02}
 		{C034FC8D-C491-4DBC-89C1-88F35315931A} = {742A4447-D83C-477D-B975-8BF4E2310B02}
+		{4E25C850-4F12-400A-9BC8-ED9FF062AA9C} = {D02ACAB5-9C41-456C-B552-0777757B7017}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB369C67-9400-4357-8DE2-2A4EE9D05B4E}

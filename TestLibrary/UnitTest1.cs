@@ -83,5 +83,57 @@ namespace TestLibrary
             Assert.AreEqual(result,182.4,0.01);
 
         }
+        [TestMethod]
+        public void test_oresund_Price()
+        {
+
+            OresundBron.Car c = new OresundBron.Car();
+            double result = c.Price();
+            Assert.AreEqual(result, 410);
+        }
+        [TestMethod]
+        public void test_oresund_discount_Price()
+        {
+
+            OresundBron.Car c = new OresundBron.Car();
+            c.brobizz = true;
+
+            double result = c.Price();
+            Assert.AreEqual(result, 161);
+        }
+        [TestMethod]
+        public void test_oresund_Type()
+        {
+            OresundBron.Car c = new OresundBron.Car();
+            string result = c.VehicleType();
+            Assert.AreEqual(result, "Oresund car");
+        }
+        [TestMethod]
+        public void test_oresund_Price_mc()
+        {
+
+            OresundBron.MC c = new OresundBron.MC();
+            double result = c.Price();
+            Assert.AreEqual(result, 210);
+        }
+        [TestMethod]
+        public void test_oresund_discount_Price_mc()
+        {
+
+            OresundBron.MC c = new OresundBron.MC();
+            c.brobizz = true;
+
+            double result = c.Price();
+            Assert.AreEqual(result, 73);
+        }
+        [TestMethod]
+        public void test_oresund_Type_mc()
+        {
+            OresundBron.MC c = new OresundBron.MC();
+            string result = c.VehicleType();
+            Assert.AreEqual(result, "Oresund MC");
+        }
+
+
     }
 }
