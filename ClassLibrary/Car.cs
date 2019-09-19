@@ -6,10 +6,10 @@ namespace TicketLibrary
     {/// <summary>
     /// Car Class with Price, and VehicleType
     /// </summary>
-        public override double Price(double price = 240)
+        public double Price()
         {
            
-            return base.Price(price);
+            return base.Price(240);
         }
         public override string VehicleType(string type = "Car")
         {

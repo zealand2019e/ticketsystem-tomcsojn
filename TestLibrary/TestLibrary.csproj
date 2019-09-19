@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary\TicketLibrary.csproj" />
+    <ProjectReference Include="..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj" />
   </ItemGroup>
 
 </Project>

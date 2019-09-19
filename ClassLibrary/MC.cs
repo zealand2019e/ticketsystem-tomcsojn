@@ -11,9 +11,9 @@ namespace TicketLibrary
         /// </summary>
         /// <param name="price"></param>
         /// <returns></returns>
-        public override double Price(double price = 125)
+        public double Price()
         {
-            return base.Price(price);
+            return base.Price(125);
             
         }
         public override string VehicleType(string type = "MC")

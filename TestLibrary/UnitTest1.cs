@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicketLibrary;
 using System;
 
+
 namespace TestLibrary
 {
     [TestClass]
@@ -69,6 +70,17 @@ namespace TestLibrary
             c.brobizz = true;
             double result = c.Price();
             Assert.AreEqual(result, 228);
+            
+        }
+        [TestMethod]
+        public void test_weekend_discount_car()
+        {
+            StoreBaeltTicketLibrary.Car c = new StoreBaeltTicketLibrary.Car();
+            c.brobizz = true;
+            c.Date = new DateTime(2019,09,21);
+
+            double result = c.Price();
+            Assert.AreEqual(result,182.4,0.01);
 
         }
     }
